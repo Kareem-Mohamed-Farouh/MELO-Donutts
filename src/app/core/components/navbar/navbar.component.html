@@ -1,0 +1,217 @@
+<div
+  class="mb-4 bg-white max-sm:mx-[1rem] sm:px-[5rem] xl:px-[10rem] p-2 shadow-sm"
+>
+  <div
+    class="font-semibold text-[.725rem] flex flex-wrap max-sm:flex-nowrap items-center"
+  >
+    <div
+      class="capitalize text-gray-700 w-full md:block md:w-auto"
+      id="navbar-dropdown"
+    >
+      <ul class="flex max-sm:space-x-2 md:space-x-4">
+        <li>
+          <a routerLink="/about" class="block rounded-sm">About Us</a>
+        </li>
+        <li class="cursor-pointer">
+          <a class="block rounded-sm">Compare</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="max-sm:hidden md:ms-auto text-gray-700">
+      <p class="flex items-center gap-1 max-sm:text-[8px]">
+        <img class="h-4 w-4" src="/image/Icon.png" class="size-4" alt="hand" />
+        100% Secure delivery without contacting the courier
+      </p>
+    </div>
+    <div
+      class="max-sm:hidden md:mx-6 text-gray-700 md:border-s-2 md:border-gray-100 md:ps-2 my-1"
+    >
+      <p>
+        Need help? Call Us:
+        <span class="text-main-color font-bold">+ 0020 500</span>
+      </p>
+    </div>
+
+    <div class="flex items-center md:border-s-2 md:border-gray-100 md:ps-2">
+      <!-- زر اختيار اللغة -->
+      <button
+        id="dropdownLanguageBtn"
+        data-dropdown-toggle="dropdownLanguage"
+        class="flex items-center w-full gap-2 py-2 text-gray-900"
+      >
+        English
+        <svg
+          class="w-2.5 h-2.5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 4 4 4-4"
+          />
+        </svg>
+      </button>
+
+      <!-- زر اختيار العملة -->
+      <button
+        id="dropdownCurrencyBtn"
+        data-dropdown-toggle="dropdownCurrency"
+        class="flex items-center w-full gap-2 py-2 px-3 text-gray-900"
+      >
+        USD
+        <svg
+          class="w-2.5 h-2.5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 4 4 4-4"
+          />
+        </svg>
+      </button>
+
+      <!-- Dropdown الخاص باللغة -->
+      <div
+        id="dropdownLanguage"
+        class="hidden z-[999] bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+      >
+        <ul class="py-2 text-sm text-gray-700">
+          <li>
+            <a
+              class="block px-4 py-2 hover:text-white transition-all duration-400"
+              >English</a
+            >
+          </li>
+          <li>
+            <a
+              class="block px-4 py-2 hover:text-white transition-all duration-400"
+              >Arabic</a
+            >
+          </li>
+          <li>
+            <a
+              class="block px-4 py-2 hover:text-white transition-all duration-400"
+              >French</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Dropdown الخاص بالعملة -->
+      <div
+        id="dropdownCurrency"
+        class="hidden z-[99999] bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+      >
+        <ul class="py-2 text-sm text-gray-700">
+          <li>
+            <a
+              class="block px-4 py-2 hover:text-white transition-all duration-400"
+              >USD</a
+            >
+          </li>
+          <li>
+            <a
+              class="block px-4 py-2 hover:text-white transition-all duration-400"
+              >EUR</a
+            >
+          </li>
+          <li>
+            <a
+              class="block px-4 py-2 hover:text-white transition-all duration-400"
+              >EGP</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav
+  class="border-gray-200 shadow-sm max-sm:mx-[1rem] sm:px-[5rem] xl:px-[10rem] dark:border-gray-700"
+>
+  <div
+    class="flex-wrap items-center justify-between mx-auto bg-[var(--bg-main-color)] flex items-center justify-between"
+  >
+    <a class="">
+      <img src="/Melologo.png" class="w-[130px]" alt="Flowbite Logo" />
+    </a>
+
+    <button
+      data-collapse-toggle="navbar-multi-level"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[var(--font-color)] rounded-lg md:hidden hover:bg-[var(--main-color2)] focus:outline-none focus:ring-2 focus:ring-[var(--font-color)] hover:bg-[var(--main-color2)] focus:ring-[var(--main-color)]"
+      aria-controls="navbar-multi-level"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"
+        />
+      </svg>
+    </button>
+
+    <div
+      class="hidden md:block w-full md:w-[40%] md:mx-[5rem] md:ms-auto"
+      id="navbar-multi-level"
+    >
+      <ul
+        class="flex flex-col justify-end items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-4 gap-3 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+      >
+        <li
+          routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+          routerLink="/home"
+          class="hover:bg-[var(--main-color)] max-md:w-full cursor-pointer rounded-lg"
+        >
+          <a class="block py-2 px-3" aria-current="page">Home</a>
+        </li>
+
+        <li
+          routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+          routerLink="/menu"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="hover:bg-[var(--main-color)] max-md:w-full cursor-pointer rounded-lg"
+        >
+          <a class="block py-2 px-3">Menu</a>
+        </li>
+        <li
+          routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+          routerLink="/about"
+          class="hover:bg-[var(--main-color)] max-md:w-full cursor-pointer rounded-lg"
+        >
+          <a class="block py-2 px-3">About</a>
+        </li>
+        <li
+          routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+          routerLink="/contact"
+          class="hover:bg-[var(--main-color)] max-md:w-full cursor-pointer rounded-lg"
+        >
+          <a class="block py-2 px-3">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

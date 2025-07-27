@@ -1,0 +1,596 @@
+{
+  "shop": {
+    "name": "Sweet Rings Donuts",
+    "location": {
+      "address": "123 Sprinkle Street",
+      "city": "Donutville",
+      "state": "Sugarland",
+      "zipcode": "45678"
+    },
+    "contact": {
+      "phone": "+1-555-123-4567",
+      "email": "info@sweetrings.com"
+    }
+  },
+  "staff": [
+    {
+      "id": "1",
+      "name": "Sarah Lee",
+      "role": "Manager",
+      "permissions": ["manage_staff", "view_reports", "edit_menu"]
+    },
+    {
+      "id": "2",
+      "name": "Mike Dough",
+      "role": "Head Baker",
+      "permissions": ["edit_inventory", "view_sales"]
+    },
+    {
+      "id": "3",
+      "name": "Jenny Frost",
+      "role": "Barista",
+      "permissions": ["prepare_drinks", "view_orders"]
+    },
+    {
+      "id": "4",
+      "name": "Rick Sprinkle",
+      "role": "Delivery Driver",
+      "permissions": ["view_deliveries", "mark_delivered"]
+    },
+    {
+      "id": "5",
+      "name": "Lily Donut",
+      "role": "Cashier",
+      "permissions": ["process_payments", "view_orders"]
+    },
+    {
+      "id": "6",
+      "name": "Mark Sugar",
+      "role": "Cleaner",
+      "permissions": ["view_schedule"]
+    },
+    {
+      "id": "7",
+      "name": "Emma Glaze",
+      "role": "Assistant Baker",
+      "permissions": ["edit_inventory", "prepare_dough"]
+    },
+    {
+      "id": "8",
+      "name": "Carlos Cream",
+      "role": "Inventory Clerk",
+      "permissions": ["view_inventory", "order_stock"]
+    },
+    {
+      "id": "9",
+      "name": "Nancy Icing",
+      "role": "Social Media",
+      "permissions": ["post_social_media", "view_reports"]
+    },
+    {
+      "id": "10",
+      "name": "Tom Brew",
+      "role": "Coffee Specialist",
+      "permissions": ["prepare_drinks", "edit_menu"]
+    }
+  ],
+  "donuts": [
+    {
+      "id": "1",
+      "name": "Classic Glazed",
+      "category": "Classic",
+      "price": 1.25,
+      "rating": 4.7,
+      "reviews_count": 120,
+      "image": "/image/donuts/0000737_-_415.png"
+    },
+    {
+      "id": "2",
+      "name": "Chocolate Frosted",
+      "category": "Frosted",
+      "price": 1.5,
+      "rating": 4.5,
+      "reviews_count": 98,
+      "image": "/image/donuts/0000739_-_415.png"
+    },
+    {
+      "id": "3",
+      "name": "Maple Bacon",
+      "category": "Frosted",
+      "price": 2,
+      "rating": 4.2,
+      "reviews_count": 76,
+      "image": "/image/donuts/0001159_-_415.png"
+    },
+    {
+      "id": "4",
+      "name": "Strawberry Jelly",
+      "category": "Filled",
+      "price": 1.75,
+      "rating": 4.3,
+      "reviews_count": 83,
+      "image": "/image/donuts/0001402_-_415.webp"
+    },
+    {
+      "id": "5",
+      "name": "Boston Cream",
+      "category": "Filled",
+      "price": 1.85,
+      "rating": 4.6,
+      "reviews_count": 105,
+      "image": "/image/donuts/0001565_-_415.webp"
+    },
+    {
+      "id": "6",
+      "name": "Cinnamon Twist",
+      "category": "Vegan",
+      "price": 1.8,
+      "rating": 4.4,
+      "reviews_count": 67,
+      "image": "/image/donuts/0001566_-_415.webp"
+    },
+    {
+      "id": "7",
+      "name": "Mini Donuts (6pcs)",
+      "category": "Mini",
+      "price": 3,
+      "rating": 4.8,
+      "reviews_count": 142,
+      "image": "/image/donuts/0001570_-_415.webp"
+    },
+    {
+      "id": "8",
+      "name": "Pumpkin Spice",
+      "category": "Seasonal",
+      "price": 2.1,
+      "rating": 4.1,
+      "reviews_count": 54,
+      "image": "/image/donuts/0001584_-_415.webp"
+    },
+    {
+      "id": "9",
+      "name": "Red Velvet Cream",
+      "category": "Frosted",
+      "price": 2.25,
+      "rating": 4.7,
+      "reviews_count": 90,
+      "image": "/image/donuts/0001585_-_415.webp"
+    },
+    {
+      "id": "10",
+      "name": "Nutella Bomb",
+      "category": "Filled",
+      "price": 2.3,
+      "rating": 4.9,
+      "reviews_count": 130,
+      "image": "/image/donuts/0001594_-_415.webp"
+    },
+    {
+      "id": "11",
+      "name": "Cookies & Cream",
+      "category": "Frosted",
+      "price": 2.4,
+      "rating": 4.5,
+      "reviews_count": 76,
+      "image": "/image/donuts/0001927_-_415.webp"
+    },
+    {
+      "id": "12",
+      "name": "Blueberry Bliss",
+      "category": "Filled",
+      "price": 1.9,
+      "rating": 4.3,
+      "reviews_count": 63,
+      "image": "/image/donuts/BagelCreamCheese_600x460@2x.png"
+    },
+    {
+      "id": "13",
+      "name": "Lemon Zest",
+      "category": "Filled",
+      "price": 1.95,
+      "rating": 4.2,
+      "reviews_count": 58,
+      "image": "/image/donuts/DD_0120_EnglishMuffinWithButter_500px copy@2x.png"
+    },
+    {
+      "id": "14",
+      "name": "Caramel Crunch",
+      "category": "Frosted",
+      "price": 2.2,
+      "rating": 4.4,
+      "reviews_count": 71,
+      "image": "/image/donuts/DNK00826_4Muffins_500px@2x.png"
+    },
+    {
+      "id": "15",
+      "name": "Chocolate Lava",
+      "category": "Filled",
+      "price": 2.5,
+      "rating": 4.6,
+      "reviews_count": 89,
+      "image": "/image/donuts/Other Bakery@2x.png"
+    }
+  ],
+  "beverages": [
+    {
+      "id": "101",
+      "name": "Hot Coffee",
+      "category": "Hot",
+      "price": 1.5,
+      "rating": 4.6,
+      "reviews_count": 200,
+      "image": "/image/drinks/drink01.png"
+    },
+    {
+      "id": "102",
+      "name": "Iced Latte",
+      "category": "Cold",
+      "price": 3,
+      "rating": 4.5,
+      "reviews_count": 180,
+      "image": "/image/drinks/drink02.png"
+    },
+    {
+      "id": "103",
+      "name": "Vanilla Milkshake",
+      "category": "Cold",
+      "price": 3.5,
+      "rating": 4.7,
+      "reviews_count": 150,
+      "image": "/image/drinks/drink03.png"
+    },
+    {
+      "id": "104",
+      "name": "Strawberry Smoothie",
+      "category": "Cold",
+      "price": 4,
+      "rating": 4.6,
+      "reviews_count": 120,
+      "image": "/image/drinks/drink04.png"
+    },
+    {
+      "id": "105",
+      "name": "Hot Chocolate",
+      "category": "Hot",
+      "price": 2.5,
+      "rating": 4.4,
+      "reviews_count": 140,
+      "image": "/image/drinks/drink05.png"
+    },
+    {
+      "id": "106",
+      "name": "Cold Brew",
+      "category": "Cold",
+      "price": 2.8,
+      "rating": 4.5,
+      "reviews_count": 160,
+      "image": "/image/drinks/drink06.png"
+    },
+    {
+      "id": "107",
+      "name": "Caramel Latte",
+      "category": "Hot",
+      "price": 3.25,
+      "rating": 4.6,
+      "reviews_count": 135,
+      "image": "/image/drinks/drink07.png"
+    },
+    {
+      "id": "108",
+      "name": "Espresso Shot",
+      "category": "Hot",
+      "price": 1,
+      "rating": 4.8,
+      "reviews_count": 210,
+      "image": "/image/drinks/drink08.png"
+    },
+    {
+      "id": "109",
+      "name": "Green Tea",
+      "category": "Hot",
+      "price": 2,
+      "rating": 4.2,
+      "reviews_count": 110,
+      "image": "/image/drinks/drink09.png"
+    },
+    {
+      "id": "110",
+      "name": "Chai Latte",
+      "category": "Hot",
+      "price": 3.1,
+      "rating": 4.3,
+      "reviews_count": 95,
+      "image": "/image/drinks/drink10.png"
+    },
+    {
+      "id": "111",
+      "name": "Mocha Frappe",
+      "category": "Cold",
+      "price": 3.6,
+      "rating": 4.5,
+      "reviews_count": 125,
+      "image": "/image/drinks/drink11.png"
+    },
+    {
+      "id": "112",
+      "name": "Matcha Latte",
+      "category": "Hot",
+      "price": 3.4,
+      "rating": 4.6,
+      "reviews_count": 130,
+      "image": "/image/drinks/drink12.png"
+    },
+    {
+      "id": "113",
+      "name": "Orange Juice",
+      "category": "Cold",
+      "price": 2.2,
+      "rating": 4.3,
+      "reviews_count": 100,
+      "image": "/image/drinks/drink13.png"
+    },
+    {
+      "id": "114",
+      "name": "Sparkling Water",
+      "category": "Cold",
+      "price": 1.8,
+      "rating": 4.1,
+      "reviews_count": 90,
+      "image": "/image/drinks/drink14.png"
+    },
+    {
+      "id": "115",
+      "name": "Coconut Water",
+      "category": "Cold",
+      "price": 2.6,
+      "rating": 4.4,
+      "reviews_count": 105,
+      "image": "/image/drinks/drink15.png"
+    }
+  ],
+  "cheesecakes": [
+    {
+      "id": "201",
+      "name": "Classic New York Cheesecake",
+      "price": 3.99,
+      "rating": 4.7,
+      "reviews_count": 75,
+      "image": "https://images.unsplash.com/photo-1606851092353-3e3e2dce2381"
+    },
+    {
+      "id": "202",
+      "name": "Strawberry Cheesecake",
+      "price": 4.25,
+      "rating": 4.6,
+      "reviews_count": 65,
+      "image": "https://images.unsplash.com/photo-1589308078056-36934a6af5b3"
+    },
+    {
+      "id": "203",
+      "name": "Chocolate Cheesecake",
+      "price": 4.5,
+      "rating": 4.8,
+      "reviews_count": 80,
+      "image": "https://images.unsplash.com/photo-1599785209707-5e2e89f0c03c"
+    },
+    {
+      "id": "204",
+      "name": "Blueberry Swirl Cheesecake",
+      "price": 4.3,
+      "rating": 4.5,
+      "reviews_count": 55,
+      "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f"
+    },
+    {
+      "id": "205",
+      "name": "Lemon Cheesecake",
+      "price": 4.1,
+      "rating": 4.4,
+      "reviews_count": 50,
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+    },
+    {
+      "id": "206",
+      "name": "Salted Caramel Cheesecake",
+      "price": 4.6,
+      "rating": 4.8,
+      "reviews_count": 60,
+      "image": "https://images.unsplash.com/photo-1611162617212-0b1f8a39e7fa"
+    },
+    {
+      "id": "207",
+      "name": "Raspberry Cheesecake",
+      "price": 4.35,
+      "rating": 4.6,
+      "reviews_count": 45,
+      "image": "https://images.unsplash.com/photo-1505253219220-ae1954490da9"
+    },
+    {
+      "id": "208",
+      "name": "Matcha Cheesecake",
+      "price": 4.55,
+      "rating": 4.7,
+      "reviews_count": 40,
+      "image": "https://images.unsplash.com/photo-1586281380341-5a6c1fe15865"
+    },
+    {
+      "id": "209",
+      "name": "Pumpkin Spice Cheesecake",
+      "price": 4.45,
+      "rating": 4.4,
+      "reviews_count": 35,
+      "image": "https://images.unsplash.com/photo-1505253219545-60dc10d78d5a"
+    },
+    {
+      "id": "210",
+      "name": "Peanut Butter Cheesecake",
+      "price": 4.75,
+      "rating": 4.9,
+      "reviews_count": 50,
+      "image": "https://images.unsplash.com/photo-1591994840537-1d2abc9cca29"
+    }
+  ],
+  "cookies": [
+    {
+      "id": "301",
+      "name": "Chocolate Chip Cookie",
+      "price": 1.5,
+      "rating": 5,
+      "reviews_count": 120,
+      "image": "https://images.unsplash.com/photo-1589191355334-75c8b820e572"
+    },
+    {
+      "id": "302",
+      "name": "Double Chocolate Cookie",
+      "price": 1.75,
+      "rating": 4.5,
+      "reviews_count": 90,
+      "image": "https://images.unsplash.com/photo-1618417212473-507a872c6f61"
+    },
+    {
+      "id": "303",
+      "name": "Oatmeal Raisin Cookie",
+      "price": 1.6,
+      "rating": 4.3,
+      "reviews_count": 80,
+      "image": "https://images.unsplash.com/photo-1627225497880-1c9ddf308b71"
+    },
+    {
+      "id": "304",
+      "name": "White Chocolate Macadamia",
+      "price": 1.8,
+      "rating": 4.6,
+      "reviews_count": 70,
+      "image": "https://images.unsplash.com/photo-1556911220-e15b29be8cdd"
+    },
+    {
+      "id": "305",
+      "name": "Peanut Butter Cookie",
+      "price": 1.7,
+      "rating": 4.5,
+      "reviews_count": 65,
+      "image": "https://images.unsplash.com/photo-1562440499-f9c79cad6a3d"
+    },
+    {
+      "id": "306",
+      "name": "Sugar Cookie",
+      "price": 1.4,
+      "rating": 4.2,
+      "reviews_count": 60,
+      "image": "https://images.unsplash.com/photo-1548946526-f69e2424cf45"
+    },
+    {
+      "id": "307",
+      "name": "Snickerdoodle",
+      "price": 1.65,
+      "rating": 4.4,
+      "reviews_count": 55,
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+    },
+    {
+      "id": "308",
+      "name": "Macaron Assortment",
+      "price": 2.1,
+      "rating": 4.7,
+      "reviews_count": 45,
+      "image": "https://images.unsplash.com/photo-1533089860892-a7f4310e733c"
+    },
+    {
+      "id": "309",
+      "name": "Butter Cookie",
+      "price": 1.55,
+      "rating": 4.3,
+      "reviews_count": 50,
+      "image": "https://images.unsplash.com/photo-1588345921523-482c5cf560a0"
+    },
+    {
+      "id": "310",
+      "name": "Gingerbread Cookie",
+      "price": 1.7,
+      "rating": 4.5,
+      "reviews_count": 40,
+      "image": "https://images.unsplash.com/photo-1556909219-6ea1a10f1592"
+    },
+    {
+      "id": "301",
+      "name": "Chocolate Chip Cookie",
+      "price": 1.5,
+      "rating": 4.7,
+      "reviews_count": 120,
+      "image": "https://images.unsplash.com/photo-1589191355334-75c8b820e572"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "name": "Emily R.",
+      "rating": 5,
+      "comment": "Amazing donuts and vibe!",
+      "date": "2025-06-20"
+    },
+    {
+      "id": "2",
+      "name": "Ahmed M.",
+      "rating": 4,
+      "comment": "Loved the Nutella Bomb.",
+      "date": "2025-06-22"
+    },
+    {
+      "id": "3",
+      "name": "Nora S.",
+      "rating": 5,
+      "comment": "Best place for morning coffee.",
+      "date": "2025-06-24"
+    },
+    {
+      "id": "4",
+      "name": "Ali Z.",
+      "rating": 3,
+      "comment": "Crowded but worth it.",
+      "date": "2025-06-25"
+    },
+    {
+      "id": "5",
+      "name": "Jana A.",
+      "rating": 4,
+      "comment": "Kids loved the mini donuts!",
+      "date": "2025-06-27"
+    },
+    {
+      "id": "6",
+      "name": "Sara M.",
+      "rating": 5,
+      "comment": "Pumpkin spice is a winner.",
+      "date": "2025-06-29"
+    },
+    {
+      "id": "7",
+      "name": "Mohamed T.",
+      "rating": 4,
+      "comment": "Coffee is strong and tasty.",
+      "date": "2025-07-01"
+    },
+    {
+      "id": "8",
+      "name": "Layla F.",
+      "rating": 5,
+      "comment": "Red velvet was heavenly!",
+      "date": "2025-07-02"
+    },
+    {
+      "id": "9",
+      "name": "Omar E.",
+      "rating": 5,
+      "comment": "Great service, fresh donuts.",
+      "date": "2025-07-03"
+    },
+    {
+      "id": "10",
+      "name": "Huda L.",
+      "rating": 3,
+      "comment": "Good but prices a bit high.",
+      "date": "2025-07-04"
+    }
+  ],
+  "cart": []
+}

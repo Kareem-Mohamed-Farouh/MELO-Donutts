@@ -1,0 +1,43 @@
+<div class="py-[40px] px-[1rem] lg:px-[10rem]">
+  <h2 class="mb-6 text-4xl font-semibold uppercase text-center">our menu</h2>
+  <ul class="font-medium flex gap-2 md:gap-5 justify-center flex-wrap">
+    <li
+      routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+      routerLink="donuts"
+      class="mb-4 cursor-pointer px-3 py-1 rounded-lg"
+    >
+      <a class="hover:underline">donuts</a>
+    </li>
+    <li
+      routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+      routerLink="beverages"
+      class="mb-4 cursor-pointer px-3 py-1 rounded-lg"
+    >
+      <a class="hover:underline">beverages</a>
+    </li>
+    <li
+      routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+      routerLink="cheascake"
+      class="mb-4 cursor-pointer px-3 py-1 rounded-lg"
+    >
+      <a class="hover:underline">cakes</a>
+    </li>
+    <li
+      routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+      routerLink="sinabon"
+      class="mb-4 cursor-pointer px-3 py-1 rounded-lg"
+    >
+      <a class="hover:underline">pastries</a>
+    </li>
+    <li
+      routerLinkActive="bg-[var(--font-color)] text-white transition-all duration-400"
+      routerLink="cookies"
+      class="mb-4 cursor-pointer px-3 py-1 rounded-lg"
+    >
+      <a class="hover:underline">desserts</a>
+    </li>
+  </ul>
+  <div class="p-5 border bordergray-200 rounded-lg">
+    <router-outlet></router-outlet>
+  </div>
+</div>

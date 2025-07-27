@@ -1,0 +1,14 @@
+<div>
+  <owl-carousel-o [options]="customOptions">
+    @for (slide of slidesStore; track $index) {
+    <ng-template carouselSlide>
+      <img
+        [src]="slide"
+        class="h-[500px] w-full object-cover"
+        [alt]="slide"
+        [title]="slide"
+      />
+    </ng-template>
+    }
+  </owl-carousel-o>
+</div>
