@@ -1,1 +1,33 @@
-<p>cheascake works!</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  @for (item of cheesData(); track $index) {
+  <div
+    class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+  >
+    <div class="relative p-2.5 h-80 overflow-hidden rounded-xl bg-clip-border">
+      <img
+        [src]="item.image"
+        alt="card-image"
+        class="h-full w-full object-cover rounded-md"
+      />
+    </div>
+    <div class="p-4">
+      <div class="mb-2 flex items-center justify-between">
+        <p class="text-slate-800 text-xl font-semibold">{{ item.name }}</p>
+        <p class="text-[var(--font-color)] text-xl font-semibold">
+          ${{ item.price.toFixed(2) }}
+        </p>
+      </div>
+      <p class="text-slate-600 leading-normal font-light">
+        {{ item.reviews_count }} reviews
+      </p>
+      <button
+        class="rounded-md w-full mt-6 bg-[var(--font-color)] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        type="button"
+      >
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  }
+</div>
